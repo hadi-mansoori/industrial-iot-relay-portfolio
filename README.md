@@ -1,3 +1,4 @@
+
 # Industrial IoT Relay Portfolio – Mansoori x16
 
 The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built with **ESP32 Type-C 32U** firmware and a **FastAPI backend**. Designed for industrial automation, it features robust hardware protection, a touchscreen interface with AI-assisted design, and secure IoT connectivity. The device is housed in a custom **“Mansoori Relay Case”**, engineered for cooling efficiency and industrial reliability.
@@ -20,9 +21,10 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
    - [CI/CD Pipeline](#cicd-pipeline)  
    - [Microservices Architecture](#microservices-architecture)  
    - [PWM Fan Control](#pwm-fan-control)  
-8. [PCB & Production Notes](#pcb--production-notes)  
-9. [Future Plans](#future-plans)  
-10. [Notes](#notes)
+8. [Source & Relay Handling](#source--relay-handling)  
+9. [PCB & Production Notes](#pcb--production-notes)  
+10. [Future Plans](#future-plans)  
+11. [Notes](#notes)
 
 ---
 
@@ -165,4 +167,47 @@ Hardware:                       CI/CD:
                                  │ Controller  │
                                  │ (ESP32)     │
                                  └─────────────┘
+```
 
+---
+
+## 🔹 Source & Relay Handling
+<a id="source--relay-handling"></a>
+
+- **Relay Modules:** The system uses **4×4-channel isolated relay modules**, providing a total of 16 channels.  
+- **Isolation:** Each module is fully isolated, protecting the **ESP32 control board** from industrial voltage spikes.  
+- **Triggering SSRs & Coils:** The relays can directly control **Solid State Relays (SSR)**, coils, or other high-current devices.  
+- **Industrial Rating:** Each relay can handle **220V AC, 10–15A**, making them suitable for industrial applications.  
+- **Control Flow:**  
+```text
+ESP32 GPIO --> 4x4 Isolated Relay Module --> Industrial Relays / SSRs / Coils
+```
+- **Software Control:** ESP32 receives commands via **FastAPI, MQTT, Webhooks, or Web Interface** and toggles the GPIO pins to activate the corresponding relay module channels.  
+- **Protection & Cooling:** PWM-controlled fans and thermal sensors ensure **SSR and relay safety** under load conditions.  
+
+---
+
+## 📌 PCB & Production Notes
+<a id="pcb--production-notes"></a>
+
+- Double-sided metallized PCB, industrial-grade  
+- Components soldered and inspected manually  
+- Thermal vias and heatsinks applied for high-current tracks  
+
+---
+
+## 🔮 Future Plans
+<a id="future-plans"></a>
+
+- LoRa wireless integration  
+- AI-assisted predictive relay scheduling  
+- Remote firmware updates via secure OTA  
+
+---
+
+## 📝 Notes
+<a id="notes"></a>
+
+- Ensure **proper grounding** when connecting industrial loads  
+- Verify SSR and relay ratings before switching high-current devices  
+- Keep enclosure ventilated for optimal fan cooling
