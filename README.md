@@ -26,8 +26,8 @@ DevOps: CI/CD workflows
 ### GUI Screenshots
 ![Touchscreen GUI](docs/gui_screenshot.jpg)
 
-### Demo Video
-[![Demo Video](docs/demo_thumbnail.jpg)](docs/demo.mp4)
+### Monitor Demo Video
+[![Demo Video](docs/demo_thumbnail.jpg)](docs/monitor-design.mp4)
 
 ## Notes
 - Firmware source code is private for security reasons.
