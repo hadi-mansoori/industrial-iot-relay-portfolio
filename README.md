@@ -23,13 +23,20 @@ A 16-channel industrial-grade IoT relay controller built with ESP32 firmware and
 ## Hardware Overview
 <div style="display: flex; gap: 10px;">
   <img src="docs/relay-x16.png" alt="16-Channel Relay Board" width="500"/>
-  <img src="docs/relay-case.png" alt="Case of x16 relay" width="500"/>
+  <img src="docs/mansoori-relay-case.png" alt="Case of x16 relay" width="500"/>
 </div>
 
+### Demo Video
+<a href="https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing"
+   target="_blank" rel="noopener noreferrer">
+  <img src="docs/Thumbnail.png" alt="Demo Video Thumbnail" width="300"/>
+</a>
 
-### Demo Video
-### Demo Video
-[Watch Demo Video](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing)
+### Hardware Demo
+<a href="https://drive.google.com/file/d/YourHardwareDemoID/view?usp=sharing"
+   target="_blank" rel="noopener noreferrer">
+  <img src="docs/Thumbnail.png" alt="Hardware Demo Thumbnail" width="500"/>
+</a>
 
 ## Notes
 - Firmware source code is private for security reasons.
