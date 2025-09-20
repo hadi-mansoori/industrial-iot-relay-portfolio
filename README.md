@@ -11,16 +11,18 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 4. [Skills Demonstrated](#skills-demonstrated)  
 5. [Hardware Overview](#hardware-overview)  
    - [Core Components](#core-components)  
-   - [Mechanical & Thermal Design](#mechanical-thermal-design)  
-6. [Software & IoT Integration](#software-iot-integration)  
-   - [CI/CD & Jenkins Integration](#cicd-jenkins-integration)  
-   - [Microservices & Network Architecture](#microservices-network-architecture)  
-   - [User & Access Management](#user-access-management)  
+   - [Mechanical & Thermal Design](#mechanical--thermal-design)  
+6. [Software & IoT Integration](#software--iot-integration)  
+   - [User & Access Management](#user--access-management)  
    - [Supported Protocols](#supported-protocols)  
-   - [Dashboard & Controls](#dashboard-controls)  
-7. [PCB & Production Notes](#pcb-production-notes)  
-8. [Future Plans](#future-plans)  
-9. [Notes](#notes)
+   - [Dashboard & Controls](#dashboard--controls)  
+7. [System Architecture & Diagrams](#system-architecture--diagrams)  
+   - [CI/CD Pipeline](#cicd-pipeline)  
+   - [Microservices Architecture](#microservices-architecture)  
+   - [PWM Fan Control](#pwm-fan-control)  
+8. [PCB & Production Notes](#pcb--production-notes)  
+9. [Future Plans](#future-plans)  
+10. [Notes](#notes)
 
 ---
 
@@ -35,7 +37,7 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ## 🎬 Demo Videos
 <a id="demo-videos"></a>
 
-| [![Case Demo](docs/case-thumbnail.png)](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing) | [![Hardware Demo](docs/Hardware-thumbnail.png)](https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing) |
+| [![Case Demo](docs/case-thumbnail.png)](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing){:target="_blank"} | [![Hardware Demo](docs/Hardware-thumbnail.png)](https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing){:target="_blank"} |
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 
 ---
@@ -44,11 +46,11 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 <a id="project-highlights"></a>
 
 - **16-channel relay control** with industrial-grade protection for SSRs and high-amp devices  
-- **Secure IoT communication:** MQTT, REST API, Webhooks, Ethernet, Internet, and LoRa-ready infrastructure  
+- **Secure IoT communication:** MQTT, REST API, Webhooks, Wi-Fi, and LoRa-ready infrastructure  
 - **Role-based access control:** multi-user management with individual relay permissions  
 - **2.8” Nextion touchscreen GUI** with dashboards **designed with AI-assisted graphics** and refined in Photoshop  
 - **PWM fan control** based on temperature (>40°C fan ON, <40°C fan OFF)  
-- **Firmware CI/CD pipeline** with Jenkins for seamless updates  
+- **Firmware CI/CD pipeline** for seamless updates  
 
 ---
 
@@ -56,14 +58,11 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 <a id="skills-demonstrated"></a>
 
 - **Embedded Systems:** ESP32 Type-C 32U, PWM, Relay Modules  
-- **IoT & Networking:** MQTT, Webhooks, Wi-Fi, Ethernet, Internet, LoRa-ready  
+- **IoT & Networking:** MQTT, Webhooks, Wi-Fi, LoRa-ready  
 - **Backend & API:** FastAPI, REST API, JWT authentication, Role/Scope-based access control  
-- **Microservices Architecture:** Backend structured with **microservices** for modularity and scalability  
-- **DevOps & CI/CD:** Full CI/CD pipeline using **Jenkins**, nodes registered for automated firmware and API deployment  
-- **Network & Gateway Management:** Relay controller accessed via **external Nginx gateway**, API services hosted on **internal network**  
-- **Self-managed DevOps:** Entire CI/CD and deployment workflow configured and executed independently  
 - **Hardware & Power Management:** Thermal & surge protection, industrial power supply integration  
 - **Additional Backend Skills:** Laravel, NestJS, Express.js  
+- **DevOps:** CI/CD workflows for firmware deployment  
 
 ---
 
@@ -90,7 +89,7 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 | **SSR Compatibility** | Can trigger industrial Solid State Relays for high-current devices |
 
 ### Mechanical & Thermal Design
-<a id="mechanical-thermal-design"></a>
+<a id="mechanical--thermal-design"></a>
 
 - Components mounted on **two 9×9 cm aluminum plates**  
 - **1 mm silicone layer** between PCB and aluminum plate for insulation  
@@ -100,12 +99,39 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 💻 Software & IoT Integration
-<a id="software-iot-integration"></a>
+<a id="software--iot-integration"></a>
 
-### CI/CD & Jenkins Integration
-<a id="cicd-jenkins-integration"></a>
+### User & Access Management
+<a id="user--access-management"></a>
 
-### System Overview (Hardware & CI/CD Side-by-Side)
+- Multi-user management with **role-based permissions**  
+- Relays can be renamed on the touchscreen  
+- Users can **change their own passwords**  
+- Admin can manage Wi-Fi credentials and user access  
+
+### Supported Protocols
+<a id="supported-protocols"></a>
+
+- Internet (wired & Wi-Fi)  
+- **MQTT**  
+- **Webhooks**  
+- **LoRa wireless** (infrastructure ready, not yet active)  
+- REST API with JWT-based scope access  
+
+### Dashboard & Controls
+<a id="dashboard--controls"></a>
+
+- Live monitoring of **fan status and temperature**  
+- Touchscreen can be disabled; control via web interface (IP-based)  
+- Admin can define users, assign roles, and control relay permissions  
+
+---
+
+## 🏗 System Architecture & Diagrams
+<a id="system-architecture--diagrams"></a>
+
+### CI/CD Pipeline
+<a id="cicd-pipeline"></a>
 
 ```text
 Hardware:                       CI/CD:
@@ -123,9 +149,8 @@ Hardware:                       CI/CD:
 └──────┬────────┘               └─────┬───────┘
        │ GPIO / PWM                  │ Build & Test
  ┌─────┴─────────┐                   ▼
- │               │            ┌─────────────────────┐
- │ Relay Module  │            │  API Deployment     │
- │ 16-Ch         │            │ (Internal Network)  │
+ │ Relay Module  │            ┌─────────────────────┐
+ │ 16-Ch         │            │  API Deployment     │
  └───────────────┘            └─────┬───────────────┘
        │                               │ Secure Routing
        ▼                               ▼
@@ -140,3 +165,4 @@ Hardware:                       CI/CD:
                                  │ Controller  │
                                  │ (ESP32)     │
                                  └─────────────┘
+
