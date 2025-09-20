@@ -1,6 +1,6 @@
 # Industrial IoT Relay Portfolio – Mansoori x16
 
-The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built with **ESP32 Type-C 32U** firmware and a **FastAPI backend**. Designed for industrial automation, it features robust hardware protection, AI-enhanced touchscreen interface, and secure IoT connectivity. The device is housed in a custom **“Mansoori Relay Case”**, engineered for cooling efficiency and industrial reliability.
+The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built with **ESP32 Type-C 32U** firmware and a **FastAPI backend**. Designed for industrial automation, it features robust hardware protection, a touchscreen interface with AI-assisted design, and secure IoT connectivity. The device is housed in a custom **“Mansoori Relay Case”**, engineered for cooling efficiency and industrial reliability.
 
 ---
 
@@ -34,7 +34,7 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 - **16-channel relay control** with industrial-grade protection for SSRs and high-amp devices  
 - **Secure IoT communication:** MQTT, REST API, Webhooks, Wi-Fi, and LoRa-ready infrastructure  
 - **Role-based access control:** multi-user management with individual relay permissions  
-- **AI-enhanced 2.8” Nextion touchscreen GUI** with dashboards designed with AI and refined in Photoshop  
+- **2.8” Nextion touchscreen GUI** with dashboards **designed with AI-assisted graphics** and refined in Photoshop  
 - **PWM fan control** based on temperature (>40°C fan ON, <40°C fan OFF)  
 - **Firmware CI/CD pipeline** for seamless updates  
 
@@ -114,6 +114,6 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 
 ## Notes
 - Firmware source code is **private for security reasons**  
-- Touchscreen interface fully **designed and programmed in Nextion IDE** with AI-enhanced graphics  
+- Touchscreen interface fully **designed and programmed in Nextion IDE**, with **graphics designed using AI-assisted design tools**  
 - Device supports **industrial automation, high-current relay control, and secure IoT operations**  
 - LoRa integration prepared for future expansion  
