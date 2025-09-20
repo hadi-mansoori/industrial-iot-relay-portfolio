@@ -13,10 +13,12 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
    - [Core Components](#core-components)  
    - [Mechanical & Thermal Design](#mechanical-thermal-design)  
 6. [Software & IoT Integration](#software-iot-integration)  
+   - [CI/CD & Jenkins Integration](#cicd--jenkins-integration)  
+   - [Microservices & Network Architecture](#microservices--network-architecture)  
    - [User & Access Management](#user-access-management)  
    - [Supported Protocols](#supported-protocols)  
    - [Dashboard & Controls](#dashboard-controls)  
-7. [PCB & Production Notes](#pcb-production-notes)  
+7. [PCB & Production Notes](#pcb--production-notes)  
 8. [Future Plans](#future-plans)  
 9. [Notes](#notes)
 
@@ -42,11 +44,11 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 <a id="project-highlights"></a>
 
 - **16-channel relay control** with industrial-grade protection for SSRs and high-amp devices  
-- **Secure IoT communication:** MQTT, REST API, Webhooks, Wi-Fi, and LoRa-ready infrastructure  
+- **Secure IoT communication:** MQTT, REST API, Webhooks, Ethernet, Internet, and LoRa-ready infrastructure  
 - **Role-based access control:** multi-user management with individual relay permissions  
 - **2.8” Nextion touchscreen GUI** with dashboards **designed with AI-assisted graphics** and refined in Photoshop  
 - **PWM fan control** based on temperature (>40°C fan ON, <40°C fan OFF)  
-- **Firmware CI/CD pipeline** for seamless updates  
+- **Firmware CI/CD pipeline** with Jenkins for seamless updates  
 
 ---
 
@@ -54,11 +56,14 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 <a id="skills-demonstrated"></a>
 
 - **Embedded Systems:** ESP32 Type-C 32U, PWM, Relay Modules  
-- **IoT & Networking:** MQTT, Webhooks, Wi-Fi, LoRa-ready  
+- **IoT & Networking:** MQTT, Webhooks, Wi-Fi, Ethernet, Internet, LoRa-ready  
 - **Backend & API:** FastAPI, REST API, JWT authentication, Role/Scope-based access control  
+- **Microservices Architecture:** Backend structured with **microservices** for modularity and scalability  
+- **DevOps & CI/CD:** Full CI/CD pipeline using **Jenkins**, nodes registered for automated firmware and API deployment  
+- **Network & Gateway Management:** Relay controller accessed via **external Nginx gateway**, API services hosted on **internal network**  
+- **Self-managed DevOps:** Entire CI/CD and deployment workflow configured and executed independently  
 - **Hardware & Power Management:** Thermal & surge protection, industrial power supply integration  
 - **Additional Backend Skills:** Laravel, NestJS, Express.js  
-- **DevOps:** CI/CD workflows for firmware deployment  
 
 ---
 
@@ -97,52 +102,37 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ## 💻 Software & IoT Integration
 <a id="software-iot-integration"></a>
 
-### User & Access Management
-<a id="user-access-management"></a>
+### CI/CD & Jenkins Integration
+<a id="cicd--jenkins-integration"></a>
 
-- Multi-user management with **role-based permissions**  
-- Relays can be renamed on the touchscreen  
-- Users can **change their own passwords**  
-- Admin can manage Wi-Fi credentials and user access  
-
-### Supported Protocols
-<a id="supported-protocols"></a>
-
-- Internet (wired & Wi-Fi)  
-- **MQTT**  
-- **Webhooks**  
-- **LoRa wireless** (infrastructure ready, not yet active)  
-- REST API with JWT-based scope access  
-
-### Dashboard & Controls
-<a id="dashboard-controls"></a>
-
-- Live monitoring of **fan status and temperature**  
-- Touchscreen can be disabled; control via web interface (IP-based)  
-- Admin can define users, assign roles, and control relay permissions  
-
----
-
-## 📐 PCB & Production Notes
-<a id="pcb-production-notes"></a>
-
-- New PCB design exists but was **not mass-produced** due to low volume and cost-efficiency  
-- Green double-sided metallized PCB used instead  
-- Raised aluminum plates allow **efficient heat dissipation**  
-
----
-
-## 🔮 Future Plans
-<a id="future-plans"></a>
-
-- Develop a **web-based control panel** with scenario scripting and industrial automation capabilities  
-
----
-
-## 📝 Notes
-<a id="notes"></a>
-
-- Firmware source code is **private for security reasons**  
-- Touchscreen interface fully **designed and programmed in Nextion IDE**, with **graphics designed using AI-assisted design tools**  
-- Device supports **industrial automation, high-current relay control, and secure IoT operations**  
-- LoRa integration prepared for future expansion
+```text
+           ┌─────────────┐
+           │  Git Repo   │
+           │ (Firmware & │
+           │   API Code) │
+           └─────┬───────┘
+                 │ Push / Commit
+                 ▼
+           ┌─────────────┐
+           │   Jenkins   │
+           │  CI/CD Node │
+           └─────┬───────┘
+                 │ Build & Test
+                 ▼
+        ┌─────────────────────┐
+        │  API Deployment     │
+        │ (Internal Network)  │
+        └─────┬───────────────┘
+                 │ Secure Routing
+                 ▼
+           ┌─────────────┐
+           │ Nginx       │
+           │ Gateway     │
+           └─────┬───────┘
+                 │ Routes Requests
+                 ▼
+           ┌─────────────┐
+           │ Relay       │
+           │ Controller  │
+           │ (ESP32)     │
+           └─────────────┘
