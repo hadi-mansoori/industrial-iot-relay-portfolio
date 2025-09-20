@@ -11,18 +11,19 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 4. [Skills Demonstrated](#skills-demonstrated)  
 5. [Hardware Overview](#hardware-overview)  
    - [Core Components](#core-components)  
-   - [Mechanical & Thermal Design](#mechanical--thermal-design)  
-6. [Software & IoT Integration](#software--iot-integration)  
-   - [User & Access Management](#user--access-management)  
+   - [Mechanical & Thermal Design](#mechanical-thermal-design)  
+6. [Software & IoT Integration](#software-iot-integration)  
+   - [User & Access Management](#user-access-management)  
    - [Supported Protocols](#supported-protocols)  
-   - [Dashboard & Controls](#dashboard--controls)  
-7. [PCB & Production Notes](#pcb--production-notes)  
+   - [Dashboard & Controls](#dashboard-controls)  
+7. [PCB & Production Notes](#pcb-production-notes)  
 8. [Future Plans](#future-plans)  
 9. [Notes](#notes)
 
 ---
 
 ## 📸 Device Photos
+<a id="device-photos"></a>
 
 | ![16-Channel Relay Board](docs/relay-x16.png) | ![Mansoori Relay Case](docs/mansoori-relay-case.png) |
 |-----------------------------------------------|------------------------------------------------|
@@ -30,6 +31,7 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 🎬 Demo Videos
+<a id="demo-videos"></a>
 
 | [![Case Demo](docs/case-thumbnail.png)](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing) | [![Hardware Demo](docs/Hardware-thumbnail.png)](https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing) |
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -37,6 +39,8 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 🚀 Project Highlights
+<a id="project-highlights"></a>
+
 - **16-channel relay control** with industrial-grade protection for SSRs and high-amp devices  
 - **Secure IoT communication:** MQTT, REST API, Webhooks, Wi-Fi, and LoRa-ready infrastructure  
 - **Role-based access control:** multi-user management with individual relay permissions  
@@ -47,6 +51,8 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 🛠 Skills Demonstrated
+<a id="skills-demonstrated"></a>
+
 - **Embedded Systems:** ESP32 Type-C 32U, PWM, Relay Modules  
 - **IoT & Networking:** MQTT, Webhooks, Wi-Fi, LoRa-ready  
 - **Backend & API:** FastAPI, REST API, JWT authentication, Role/Scope-based access control  
@@ -57,8 +63,10 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 🔧 Hardware Overview
+<a id="hardware-overview"></a>
 
 ### Core Components
+<a id="core-components"></a>
 
 | Component | Description |
 |-----------|-------------|
@@ -77,6 +85,8 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 | **SSR Compatibility** | Can trigger industrial Solid State Relays for high-current devices |
 
 ### Mechanical & Thermal Design
+<a id="mechanical-thermal-design"></a>
+
 - Components mounted on **two 9×9 cm aluminum plates**  
 - **1 mm silicone layer** between PCB and aluminum plate for insulation  
 - Raised screws (~2.5 cm) for improved airflow  
@@ -85,14 +95,19 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 💻 Software & IoT Integration
+<a id="software-iot-integration"></a>
 
 ### User & Access Management
+<a id="user-access-management"></a>
+
 - Multi-user management with **role-based permissions**  
 - Relays can be renamed on the touchscreen  
 - Users can **change their own passwords**  
 - Admin can manage Wi-Fi credentials and user access  
 
 ### Supported Protocols
+<a id="supported-protocols"></a>
+
 - Internet (wired & Wi-Fi)  
 - **MQTT**  
 - **Webhooks**  
@@ -100,6 +115,8 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 - REST API with JWT-based scope access  
 
 ### Dashboard & Controls
+<a id="dashboard-controls"></a>
+
 - Live monitoring of **fan status and temperature**  
 - Touchscreen can be disabled; control via web interface (IP-based)  
 - Admin can define users, assign roles, and control relay permissions  
@@ -107,6 +124,8 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 📐 PCB & Production Notes
+<a id="pcb-production-notes"></a>
+
 - New PCB design exists but was **not mass-produced** due to low volume and cost-efficiency  
 - Green double-sided metallized PCB used instead  
 - Raised aluminum plates allow **efficient heat dissipation**  
@@ -114,11 +133,15 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ---
 
 ## 🔮 Future Plans
+<a id="future-plans"></a>
+
 - Develop a **web-based control panel** with scenario scripting and industrial automation capabilities  
 
 ---
 
 ## 📝 Notes
+<a id="notes"></a>
+
 - Firmware source code is **private for security reasons**  
 - Touchscreen interface fully **designed and programmed in Nextion IDE**, with **graphics designed using AI-assisted design tools**  
 - Device supports **industrial automation, high-current relay control, and secure IoT operations**  
