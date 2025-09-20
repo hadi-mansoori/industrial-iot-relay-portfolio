@@ -17,12 +17,7 @@ The **Mansoori x16** is a **16-channel industrial-grade IoT relay controller** b
 3. [Project Highlights](#project-highlights)  
 4. [Skills Demonstrated](#skills-demonstrated)  
 5. [Hardware Overview](#hardware-overview)  
-   - [Core Components](#core-components)  
-   - [Mechanical & Thermal Design](#mechanical--thermal-design)  
 6. [Software & IoT Integration](#software--iot-integration)  
-   - [User & Access Management](#user--access-management)  
-   - [Supported Protocols](#supported-protocols)  
-   - [Dashboard & Controls](#dashboard--controls)  
 7. [PCB & Production Notes](#pcb--production-notes)  
 8. [Future Plans](#future-plans)  
 9. [Notes](#notes)  
@@ -30,14 +25,16 @@ The **Mansoori x16** is a **16-channel industrial-grade IoT relay controller** b
 ---
 
 ## 📸 Device Photos
-![16-Channel Relay Board](docs/relay-x16.png)  
-![Mansoori Relay Case](docs/mansoori-relay-case.png)  
+
+| ![16-Channel Relay Board](docs/relay-x16.png) | ![Mansoori Relay Case](docs/mansoori-relay-case.png) |
+|-----------------------------------------------|------------------------------------------------|
 
 ---
 
 ## 🎬 Demo Videos
-[![Case Demo](docs/case-thumbnail.png)](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing)  
-[![Hardware Demo](docs/Hardware-thumbnail.png)](https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing)  
+
+| [![Case Demo](docs/case-thumbnail.png)](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing) | [![Hardware Demo](docs/Hardware-thumbnail.png)](https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing) |
+|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 
 ---
 
