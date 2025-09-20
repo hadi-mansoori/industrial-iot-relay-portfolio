@@ -22,8 +22,8 @@ A 16-channel industrial-grade IoT relay controller built with ESP32 firmware and
 ### Device Photos
 ## Hardware Overview
 <div style="display: flex; gap: 10px;">
-  <img src="docs/relay-x16.png" alt="16-Channel Relay Board" width="500"/>
-  <img src="docs/mansoori-relay-case.png" alt="Case of x16 relay" width="500"/>
+  <img src="docs/relay-x16.png" alt="16-Channel Relay Board" width="450"/>
+  <img src="docs/mansoori-relay-case.png" alt="Case of x16 relay" width="450"/>
 </div>
 
 ### Demo Videos
@@ -32,12 +32,12 @@ A 16-channel industrial-grade IoT relay controller built with ESP32 firmware and
   <tr>
     <td>
       <a href="https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-        <img src="docs/case-thumbnail.png" alt="Case Demo Thumbnail" width="300"/>
+        <img src="docs/case-thumbnail.png" alt="Case Demo Thumbnail" width="400"/>
       </a>
     </td>
     <td>
       <a href="https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-        <img src="docs/Hardware-thumbnail.png" alt="Hardware Demo Thumbnail" width="300"/>
+        <img src="docs/Hardware-thumbnail.png" alt="Hardware Demo Thumbnail" width="400"/>
       </a>
     </td>
   </tr>
