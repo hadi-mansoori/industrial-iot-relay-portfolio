@@ -89,6 +89,8 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 | **Heat Management** | Aluminum heatsinks with heat-resistant adhesive for critical components |
 | **Cabling** | Handcrafted, sorted, and properly housed |
 | **SSR Compatibility** | Can trigger industrial Solid State Relays for high-current devices |
+| **Realu module** | 4x4 Isolated Relay Module |
+
 
 ### Mechanical & Thermal Design
 <a id="mechanical--thermal-design"></a>
