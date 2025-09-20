@@ -13,9 +13,12 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
    - [Core Components](#core-components)  
    - [Mechanical & Thermal Design](#mechanical--thermal-design)  
 6. [Software & IoT Integration](#software--iot-integration)  
+   - [User & Access Management](#user--access-management)  
+   - [Supported Protocols](#supported-protocols)  
+   - [Dashboard & Controls](#dashboard--controls)  
 7. [PCB & Production Notes](#pcb--production-notes)  
 8. [Future Plans](#future-plans)  
-9. [Notes](#notes)  
+9. [Notes](#notes)
 
 ---
 
@@ -119,4 +122,4 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 - Firmware source code is **private for security reasons**  
 - Touchscreen interface fully **designed and programmed in Nextion IDE**, with **graphics designed using AI-assisted design tools**  
 - Device supports **industrial automation, high-current relay control, and secure IoT operations**  
-- LoRa integration prepared for future expansion  
+- LoRa integration prepared for future expansion
