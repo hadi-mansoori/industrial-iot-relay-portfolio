@@ -22,6 +22,7 @@ A 16-channel industrial-grade IoT relay controller built with ESP32 firmware and
 ### Device Photos
 ## Hardware Overview
 <img src="docs/relay-x16.png" alt="16-Channel Relay Board" width="500"/>
+<img src="docs/relay-case.png" alt="Case of x16 relay" width="500"/>
 
 ### GUI Screenshots
 ![Touchscreen GUI](docs/gui_screenshot.jpg)
