@@ -29,7 +29,7 @@ A 16-channel industrial-grade IoT relay controller built with ESP32 firmware and
 
 ### Demo Video
 <video width="600" controls>
-  <source src="https://drive.google.com/file/d/1CmcgZSa7gOD--nTX0IZ2ZIAo9pDmQ4Am/view?usp=sharing" type="video/mp4">
+  <source src="docs/monitor-design.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
