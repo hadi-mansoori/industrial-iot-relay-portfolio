@@ -27,19 +27,22 @@ A 16-channel industrial-grade IoT relay controller built with ESP32 firmware and
 </div>
 
 ### Demo Videos
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
 
-  <a href="https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing"
-     target="_blank" rel="noopener noreferrer" style="display: block;">
-    <img src="docs/case-thumbnail.png" alt="Case Demo Thumbnail" width="300"/>
-  </a>
+<table>
+  <tr>
+    <td>
+      <a href="https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <img src="docs/case-thumbnail.png" alt="Case Demo Thumbnail" width="300"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <img src="docs/Hardware-thumbnail.png" alt="Hardware Demo Thumbnail" width="300"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
-  <a href="https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing"
-     target="_blank" rel="noopener noreferrer" style="display: block;">
-    <img src="docs/Hardware-thumbnail.png" alt="Hardware Demo Thumbnail" width="300"/>
-  </a>
-
-</div>
 
 
 ## Notes
