@@ -30,7 +30,10 @@ A 16-channel industrial-grade IoT relay controller built with ESP32 firmware and
 ![Touchscreen GUI](docs/gui_screenshot.jpg)
 
 ### Demo Video
-[![Demo Video](docs/demo_thumbnail.jpg)](https://drive.google.com/file/d/1CmcgZSa7gOD--nTX0IZ2ZIAo9pDmQ4Am/view?usp=sharing)
+<video width="600" controls>
+  <source src="[docs/demo.mp4](https://drive.google.com/file/d/1CmcgZSa7gOD--nTX0IZ2ZIAo9pDmQ4Am/view?usp=sharing)" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Notes
 - Firmware source code is private for security reasons.
