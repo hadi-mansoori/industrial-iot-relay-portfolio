@@ -39,7 +39,7 @@ The **Mansoori x16** is a 16-channel industrial-grade IoT relay controller built
 ## 🎬 Demo Videos
 <a id="demo-videos"></a>
 
-| [![Case Demo](docs/case-thumbnail.png)](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing){:target="_blank"} | [![Hardware Demo](docs/Hardware-thumbnail.png)](https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing){:target="_blank"} |
+| [![Case Demo](docs/case-thumbnail.png)](https://drive.google.com/file/d/1MGCB0fB2KWl_RKL3cDo0bGKrn-c_zvfe/view?usp=sharing)| [![Hardware Demo](docs/Hardware-thumbnail.png)](https://drive.google.com/file/d/17JpMd7C1Y9j4aAa2YxCbYHXK-l0a70tc/view?usp=sharing) |
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 
 ---
